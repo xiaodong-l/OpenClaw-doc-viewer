@@ -129,13 +129,31 @@ Visit http://localhost:5173
 
 ## 📖 Documentation
 
+### Getting Started
+
 | Document | Description |
 |----------|-------------|
+| [Quick Start](docs/QUICKSTART.md) | Get started in 5 minutes |
 | [Installation Guide](docs/INSTALL.md) | Step-by-step installation |
 | [Deployment Guide](docs/DEPLOYMENT.md) | Production deployment |
-| [Quick Start](docs/QUICKSTART.md) | Get started in 5 minutes |
+
+### Technical Documentation
+
+| Document | Description |
+|----------|-------------|
 | [API Reference](docs/API.md) | API endpoint documentation |
 | [Configuration](docs/CONFIGURATION.md) | Configuration options |
+| [Architecture](docs/ARCHITECTURE.md) | System architecture |
+| [Translation Guide](docs/TRANSLATION.md) | Multi-language support |
+
+### Project Documentation
+
+| Document | Description |
+|----------|-------------|
+| [Roadmap](docs/ROADMAP.md) | Project roadmap & timeline |
+| [Maintainers](docs/MAINTAINERS.md) | Maintainer guide |
+| [Releases](docs/RELEASES.md) | Release process |
+| [Contributing](CONTRIBUTING.md) | How to contribute |
 
 ---
 
