@@ -1,0 +1,173 @@
+{
+  "common": {
+    "save": "保存",
+    "cancel": "取消",
+    "delete": "删除",
+    "edit": "编辑",
+    "create": "创建",
+    "update": "更新",
+    "search": "搜索",
+    "loading": "加载中...",
+    "success": "成功",
+    "error": "错误",
+    "confirm": "确认",
+    "back": "返回",
+    "next": "下一步",
+    "previous": "上一步",
+    "close": "关闭",
+    "yes": "是",
+    "no": "否",
+    "ok": "确定"
+  },
+  "auth": {
+    "login": "登录",
+    "logout": "退出登录",
+    "register": "注册",
+    "email": "邮箱",
+    "password": "密码",
+    "username": "用户名",
+    "rememberMe": "记住我",
+    "forgotPassword": "忘记密码",
+    "resetPassword": "重置密码",
+    "loginSuccess": "登录成功",
+    "loginFailed": "登录失败",
+    "logoutSuccess": "已退出登录"
+  },
+  "document": {
+    "title": "文档",
+    "documents": "文档",
+    "name": "文档名称",
+    "path": "路径",
+    "size": "大小",
+    "type": "类型",
+    "createdAt": "创建时间",
+    "updatedAt": "更新时间",
+    "view": "查看",
+    "edit": "编辑",
+    "delete": "删除",
+    "download": "下载",
+    "upload": "上传",
+    "search": "搜索文档",
+    "noDocuments": "暂无文档",
+    "deleteConfirm": "确定要删除此文档吗？"
+  },
+  "collection": {
+    "title": "收藏夹",
+    "collections": "收藏夹",
+    "name": "名称",
+    "create": "创建收藏夹",
+    "delete": "删除收藏夹",
+    "addToCollection": "添加到收藏夹"
+  },
+  "share": {
+    "title": "分享",
+    "share": "分享",
+    "shareLink": "分享链接",
+    "createShare": "创建分享",
+    "expiresAt": "过期时间",
+    "password": "密码",
+    "copyLink": "复制链接",
+    "publicPage": "公开页面"
+  },
+  "comment": {
+    "title": "评论",
+    "comments": "评论",
+    "addComment": "添加评论",
+    "reply": "回复",
+    "edit": "编辑评论",
+    "delete": "删除评论",
+    "like": "点赞",
+    "noComments": "暂无评论"
+  },
+  "version": {
+    "title": "版本",
+    "versions": "版本历史",
+    "currentVersion": "当前版本",
+    "versionNumber": "版本号",
+    "changeSummary": "变更摘要",
+    "compare": "对比",
+    "rollback": "回滚",
+    "createdAt": "创建时间",
+    "createdBy": "创建者"
+  },
+  "permission": {
+    "title": "权限",
+    "permissions": "权限",
+    "role": "角色",
+    "owner": "所有者",
+    "editor": "编辑者",
+    "viewer": "查看者",
+    "grant": "授权",
+    "revoke": "撤销",
+    "public": "公开",
+    "private": "私有"
+  },
+  "user": {
+    "title": "用户",
+    "users": "用户管理",
+    "profile": "个人资料",
+    "settings": "设置",
+    "email": "邮箱",
+    "username": "用户名",
+    "role": "角色",
+    "status": "状态",
+    "active": "活跃",
+    "inactive": "禁用",
+    "lastLogin": "最后登录"
+  },
+  "notification": {
+    "title": "通知",
+    "notifications": "通知",
+    "unread": "未读",
+    "markAsRead": "标记为已读",
+    "markAllAsRead": "全部已读",
+    "noNotifications": "暂无通知",
+    "settings": "通知设置"
+  },
+  "search": {
+    "title": "搜索",
+    "placeholder": "搜索文档...",
+    "results": "搜索结果",
+    "noResults": "未找到相关结果",
+    "searchInContent": "搜索内容",
+    "searchInTitle": "搜索标题"
+  },
+  "gdpr": {
+    "title": "数据隐私",
+    "exportData": "导出数据",
+    "deleteAccount": "删除账户",
+    "privacySettings": "隐私设置",
+    "cookieSettings": "Cookie 设置",
+    "requestExport": "请求导出数据",
+    "requestDelete": "请求删除账户",
+    "dataRetention": "数据保留",
+    "downloadLink": "下载链接"
+  },
+  "ldap": {
+    "title": "LDAP/AD 集成",
+    "configs": "LDAP 配置",
+    "addConfig": "添加 LDAP 配置",
+    "server": "服务器",
+    "port": "端口",
+    "baseDN": "Base DN",
+    "bindDN": "Bind DN",
+    "testConnection": "测试连接",
+    "syncUsers": "同步用户",
+    "syncLogs": "同步日志"
+  },
+  "sso": {
+    "title": "企业登录",
+    "wechat": "企业微信",
+    "dingtalk": "钉钉",
+    "ldap": "LDAP/AD",
+    "loginWith": "使用 {{provider}} 登录"
+  },
+  "error": {
+    "notFound": "页面不存在",
+    "unauthorized": "未授权",
+    "forbidden": "无权限",
+    "serverError": "服务器错误",
+    "networkError": "网络错误",
+    "invalidInput": "输入无效"
+  }
+}
