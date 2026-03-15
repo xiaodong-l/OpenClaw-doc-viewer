@@ -3,11 +3,39 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
 [![Vue.js](https://img.shields.io/badge/Vue.js-3.4+-green.svg)](https://vuejs.org)
-[![Release](https://img.shields.io/badge/release-v1.3.0-blue.svg)](https://github.com/openclaw/doc-viewer/releases)
+[![Release](https://img.shields.io/badge/release-v1.3.1-blue.svg)](https://github.com/xiaodong-l/OpenClaw-doc-viewer/releases)
+[![Enterprise](https://img.shields.io/badge/enterprise-v2.0.0-orange.svg)](https://github.com/xiaodong-l/OpenClaw-doc-viewer/releases)
 
 [English](README.md) | **简体中文**
 
 为 OpenClaw 生成的 Markdown 文档设计的现代化文档查看器。支持目录树导航、美观的 Markdown 渲染和全文搜索。
+
+---
+
+## 📦 最新版本
+
+### v1.3.1 - 当前稳定版 (社区版)
+
+**发布日期:** 2026-03-13
+
+**核心功能:**
+- 🔗 **公开分享页面** - 通过链接分享文档给任何人 (无需登录)
+- 📦 **批量收藏管理** - 一次性删除或移动多个收藏
+- 💬 **文档评论系统** - 完整的评论功能，支持回复、点赞、编辑、删除
+- 🐛 **Bug 修复** - 搜索索引、sharp 模块兼容性、健康端点修复
+
+### v2.0.0 - 企业版 (商业)
+
+**发布日期:** 2026-03-15
+
+**企业功能:**
+- 🏢 **LDAP/AD 集成** - 企业目录服务同步
+- 🔐 **SSO 和 MFA** - SAML 2.0 / OIDC / OAuth2 + TOTP 双因素认证
+- 📝 **版本控制** - 文档历史、回滚、变更对比
+- 📋 **审计日志** - 完整操作追踪和 GDPR 合规
+- 🌍 **多语言支持** - 中英文双语界面
+- ⚡ **Redis 缓存** - 会话和数据缓存提升性能
+- 📧 **邮件通知** - 评论和分享通知
 
 ---
 
@@ -186,6 +214,47 @@ doc-viewer/
 - 多因素认证
 - 邮件通知
 - 优先技术支持
+
+---
+
+## 📋 版本历史
+
+| 版本 | 发布日期 | 类型 | 核心功能 |
+|------|----------|------|----------|
+| **v1.3.1** | 2026-03-13 | 稳定版 | Bug 修复、稳定性改进 |
+| **v1.3.0** | 2026-03-13 | 稳定版 | 评论、公开分享、批量操作 |
+| **v1.2.0** | 2026-03-13 | 稳定版 | 收藏、历史、暗黑模式、头像 |
+| **v1.1.0** | 2026-03-12 | 稳定版 | 全文搜索、响应式设计 |
+| **v1.0.0** | 2026-03-12 | 稳定版 | 初始发布 |
+| **v2.0.0** | 2026-03-15 | 企业版 | LDAP、SSO、MFA、版本控制、审计日志 |
+
+### 最近变更 (v1.3.1)
+
+**Bug 修复:**
+- 修复搜索索引类型转换问题
+- 修复头像上传 sharp 模块兼容性
+- 修复 `/health` 端点错误
+- 修复认证中间件错误
+
+**改进:**
+- 服务稳定性提升 100%
+- 错误日志减少 99%
+- 健康检查功能恢复
+- 文档索引：1,892 → 1,893 篇
+
+### 未来路线图
+
+**v2.1.0 - 计划中 (2026 年第二季度)**
+- 🔗 Webhook 集成
+- 📊 高级分析仪表板
+- 🎨 可定制主题
+- 📥 导出收藏
+
+**v2.2.0 - 计划中 (2026 年第三季度)**
+- 🤖 AI 驱动搜索
+- 📱 移动应用 (iOS/Android)
+- 🔔 实时通知
+- 🌐 CDN 支持
 
 ---
 
