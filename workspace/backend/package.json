@@ -27,7 +27,7 @@
     "flexsearch": "^0.8.212",
     "jsonwebtoken": "^9.0.3",
     "markdown-it": "^14.1.1",
-    "nodemailer": "^6.9.14",
+    "nodemailer": "^8.0.2",
     "otpauth": "^9.3.4",
     "redis": "^4.7.0",
     "ws": "^8.18.0"
