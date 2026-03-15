@@ -11,7 +11,7 @@
   "dependencies": {
     "vue": "^3.4.21",
     "vue-router": "^5.0.3",
-    "pinia": "^2.1.7",
+    "pinia": "^3.0.4",
     "element-plus": "^2.6.1",
     "axios": "^1.6.8",
     "markdown-it": "^14.1.0",
