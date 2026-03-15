@@ -1,0 +1,118 @@
+# Dependencies
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Build output
+dist/
+build/
+out/
+
+# Environment
+.env
+.env.local
+.env.*.local
+.env.production
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage/
+.nyc_output/
+*.lcov
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Testing
+test-results/
+.playwright/
+.cypress/
+
+# Project specific
+data/
+cache/
+tmp/
+temp/
+memory/
+context/
+
+# PM2
+.pm2/
+ecosystem.config.js.bak
+
+# TypeScript
+*.tsbuildinfo
+
+# Optional npm cache
+.npm/
+
+# Parcel
+.cache/
+.parcel-cache/
+
+# Rollup
+.rollup.cache/
+
+# Vite
+.vite/
+
+# ESLint
+.eslintcache
+
+# Prettier
+.prettier-cache
+
+# Husky
+.husky/_/
+
+# Local development
+*.local.*
+*.dev.*
+local.*
+dev.*
+
+# Secrets
+*.pem
+*.key
+*.crt
+secrets/
+credentials/
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Compressed files
+*.zip
+*.tar.gz
+*.rar
