@@ -1,0 +1,28 @@
+# Code Owners for OpenClaw Doc Viewer
+# https://help.github.com/articles/about-codeowners/
+
+# Default owners for all files
+* @xiaodong-l
+
+# Backend code
+/workspace/backend/ @xiaodong-l
+
+# Frontend code
+/workspace/frontend/ @xiaodong-l
+
+# Documentation
+/docs/ @xiaodong-l
+*.md @xiaodong-l
+
+# Configuration files
+*.json @xiaodong-l
+*.yaml @xiaodong-l
+*.yml @xiaodong-l
+.env.example @xiaodong-l
+
+# CI/CD workflows
+.github/workflows/ @xiaodong-l
+
+# Security-related files
+SECURITY.md @xiaodong-l
+LICENSE @xiaodong-l
