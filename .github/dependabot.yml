@@ -23,6 +23,15 @@ updates:
       - "xiaodong-l"
     assignees:
       - "xiaodong-l"
+    # Auto-merge settings
+    versioning-strategy: increase
+    groups:
+      backend-minor:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
 
   # Frontend dependencies
   - package-ecosystem: "npm"
@@ -44,6 +53,15 @@ updates:
       - "xiaodong-l"
     assignees:
       - "xiaodong-l"
+    # Auto-merge settings
+    versioning-strategy: increase
+    groups:
+      frontend-minor:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
 
   # GitHub Actions
   - package-ecosystem: "github-actions"
@@ -63,6 +81,14 @@ updates:
       include: "scope"
     reviewers:
       - "xiaodong-l"
+    # Auto-merge for Actions (generally safe)
+    groups:
+      github-actions:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
 
   # Docker
   - package-ecosystem: "docker"
@@ -80,3 +106,35 @@ updates:
     commit-message:
       prefix: "chore(docker)"
       include: "scope"
+    # Auto-merge for Docker minor/patch
+    groups:
+      docker-minor:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # Root dependencies (if any)
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "UTC"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "root"
+      - "automated"
+    commit-message:
+      prefix: "chore(deps)"
+      include: "scope"
+    groups:
+      root-minor:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"

@@ -4,13 +4,80 @@ on:
   pull_request:
     branches: [main]
 
+permissions:
+  contents: write
+  pull-requests: write
+  checks: read
+
 jobs:
   auto-merge:
     runs-on: ubuntu-latest
     if: github.actor == 'dependabot[bot]'
     steps:
       - name: Enable auto-merge for Dependabot PRs
-        run: gh pr merge --auto --merge "$PR_URL"
+        id: auto-merge
+        run: |
+          # Get PR info
+          PR_NUMBER=$(gh pr view --json number,title,updateBranchAllowed --jq '.number')
+          PR_TITLE=$(gh pr view --json number,title,updateBranchAllowed --jq '.title')
+          
+          echo "Processing PR #$PR_NUMBER: $PR_TITLE"
+          
+          # Check if it's a minor/patch update (not major)
+          if echo "$PR_TITLE" | grep -qE "(Bump|Update).*(from|to).*[0-9]+\.[0-9]+\.[0-9]+"; then
+            # Extract version numbers
+            OLD_VERSION=$(echo "$PR_TITLE" | grep -oE 'from [0-9]+\.[0-9]+\.[0-9]+' | cut -d' ' -f2)
+            NEW_VERSION=$(echo "$PR_TITLE" | grep -oE 'to [0-9]+\.[0-9]+\.[0-9]+' | cut -d' ' -f2)
+            
+            if [ -n "$OLD_VERSION" ] && [ -n "$NEW_VERSION" ]; then
+              # Extract major versions
+              OLD_MAJOR=$(echo "$OLD_VERSION" | cut -d'.' -f1)
+              NEW_MAJOR=$(echo "$NEW_VERSION" | cut -d'.' -f1)
+              
+              if [ "$OLD_MAJOR" = "$NEW_MAJOR" ]; then
+                echo "✓ Minor/Patch update detected (v$OLD_VERSION → v$NEW_VERSION)"
+                echo "auto_merge=true" >> $GITHUB_OUTPUT
+              else
+                echo "⚠ Major update detected (v$OLD_VERSION → v$NEW_VERSION), skipping auto-merge"
+                echo "auto_merge=false" >> $GITHUB_OUTPUT
+              fi
+            else
+              echo "⚠ Could not parse version, skipping auto-merge"
+              echo "auto_merge=false" >> $GITHUB_OUTPUT
+            fi
+          else
+            echo "⚠ Not a version bump, skipping auto-merge"
+            echo "auto_merge=false" >> $GITHUB_OUTPUT
+          fi
         env:
-          PR_URL: ${{ github.event.pull_request.html_url }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Wait for CI checks
+        if: steps.auto-merge.outputs.auto_merge == 'true'
+        run: |
+          echo "Waiting for CI checks to pass..."
+          # Wait up to 10 minutes for checks
+          for i in {1..60}; do
+            STATUS=$(gh pr view --json statusCheckRollup --jq '.statusCheckRollup[].status')
+            CONCLUSION=$(gh pr view --json statusCheckRollup --jq '.statusCheckRollup[].conclusion')
+            
+            if [ "$STATUS" = "COMPLETED" ] && [ "$CONCLUSION" = "SUCCESS" ]; then
+              echo "✓ All CI checks passed!"
+              exit 0
+            fi
+            
+            echo "Waiting for CI checks... (attempt $i/60)"
+            sleep 10
+          done
+          echo "⚠ Timeout waiting for CI checks"
+          exit 0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Auto-merge minor/patch updates
+        if: steps.auto-merge.outputs.auto_merge == 'true'
+        run: |
+          echo "Enabling auto-merge for PR #$PR_NUMBER"
+          gh pr merge --auto --squash --delete-branch
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
