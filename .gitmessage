@@ -1,0 +1,33 @@
+# <type>(<scope>): <subject>
+# |<----  Using a Maximum Of 50 Characters  ---->|
+
+# Explain why this change is being made
+# |<----   Try To Limit Each Line to a Maximum Of 72 Characters   ---->|
+
+# Provide links or keys to any relevant tickets, articles or other resources
+
+# --- COMMIT END ---
+# Type can be:
+#   feat:     A new feature
+#   fix:      A bug fix
+#   docs:     Documentation only changes
+#   style:    Changes that do not affect the meaning of the code
+#             (white-space, formatting, missing semi-colons, etc)
+#   refactor: A code change that neither fixes a bug nor adds a feature
+#   perf:     A code change that improves performance
+#   test:     Adding missing tests or correcting existing tests
+#   build:    Changes that affect the build system or external dependencies
+#             (example scopes: gulp, broccoli, npm)
+#   ci:       Changes to our CI configuration files and scripts
+#             (example scopes: Travis, Circle, BrowserStack, SauceLabs)
+#   chore:    Other changes that don't modify src or test files
+#   revert:   Reverts a previous commit
+# --- COMMIT END ---
+#
+# Rules:
+#   - Use imperative, present tense: "change" not "changed" nor "changes"
+#   - Don't capitalize first letter of subject line
+#   - No dot (.) at the end of subject line
+#   - Separate subject from body with a blank line
+#   - Use the body to explain what and why vs. how
+#

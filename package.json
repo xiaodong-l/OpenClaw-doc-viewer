@@ -1,0 +1,80 @@
+{
+  "name": "openclaw-doc-viewer",
+  "version": "1.3.1",
+  "description": "A modern, feature-rich document viewer for OpenClaw-generated Markdown documentation",
+  "private": true,
+  "workspaces": [
+    "workspace/backend",
+    "workspace/frontend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd workspace/backend && npm run dev",
+    "dev:frontend": "cd workspace/frontend && npm run dev",
+    "build": "npm run build:frontend && npm run build:backend",
+    "build:frontend": "cd workspace/frontend && npm run build",
+    "build:backend": "cd workspace/backend && npm run build",
+    "start": "cd workspace/backend && npm start",
+    "test": "npm run test:backend && npm run test:frontend",
+    "test:backend": "cd workspace/backend && npm test",
+    "test:frontend": "cd workspace/frontend && npm run test",
+    "lint": "npm run lint:backend && npm run lint:frontend",
+    "lint:backend": "cd workspace/backend && npm run lint",
+    "lint:frontend": "cd workspace/frontend && npm run lint",
+    "clean": "rm -rf workspace/backend/node_modules workspace/frontend/node_modules node_modules",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaodong-l/OpenClaw-doc-viewer.git"
+  },
+  "keywords": [
+    "openclaw",
+    "documentation",
+    "markdown",
+    "viewer",
+    "docs",
+    "vue",
+    "nodejs",
+    "fastify"
+  ],
+  "author": {
+    "name": "xiaodong-l",
+    "email": "3253612047@qq.com",
+    "url": "https://github.com/xiaodong-l"
+  },
+  "contributors": [
+    {
+      "name": "OpenClaw Team",
+      "url": "https://openclaw.ai"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xiaodong-l/OpenClaw-doc-viewer/issues"
+  },
+  "homepage": "https://github.com/xiaodong-l/OpenClaw-doc-viewer#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{md,json,html,css}": [
+      "prettier --write"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}

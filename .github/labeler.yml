@@ -1,0 +1,95 @@
+# Automatic label assignment for PRs
+# https://github.com/actions/labeler
+
+# Documentation
+documentation:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "**/*.md"
+          - "docs/**/*"
+          - "README*"
+          - "CONTRIBUTING*"
+          - "CHANGELOG*"
+
+# Backend
+backend:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "workspace/backend/**/*"
+          - "**/*.js"
+          - "**/*.ts"
+
+# Frontend
+frontend:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "workspace/frontend/**/*"
+          - "**/*.vue"
+          - "**/*.css"
+          - "**/*.scss"
+
+# CI/CD
+"ci/cd":
+  - changed-files:
+      - any-glob-to-any-file:
+          - ".github/workflows/**/*"
+          - ".github/**/*"
+          - ".gitlab-ci.yml"
+          - "Jenkinsfile"
+
+# Docker
+docker:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "Dockerfile*"
+          - "docker-compose*.yml"
+          - ".dockerignore"
+
+# Configuration
+configuration:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "**/*.json"
+          - "**/*.yaml"
+          - "**/*.yml"
+          - "**/*.toml"
+          - "**/*.ini"
+          - ".env*"
+          - ".editorconfig"
+          - ".prettierrc"
+          - ".eslintrc*"
+
+# Tests
+tests:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "**/*.test.js"
+          - "**/*.spec.js"
+          - "**/test/**/*"
+          - "**/tests/**/*"
+          - "**/__tests__/**/*"
+
+# Dependencies
+dependencies:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "package.json"
+          - "package-lock.json"
+          - "pnpm-lock.yaml"
+          - "yarn.lock"
+
+# Security
+security:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "SECURITY.md"
+          - ".github/SECURITY.md"
+          - "**/security/**/*"
+
+# Translations
+translations:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "README.*.md"
+          - "**/locales/**/*"
+          - "**/i18n/**/*"

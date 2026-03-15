@@ -1,0 +1,26 @@
+# Funding platforms for OpenClaw Doc Viewer
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/displaying-a-sponsor-button-in-your-repository
+
+# GitHub Sponsors (primary)
+github:
+  - xiaodong-l
+
+# Open Collective
+open_collective: openclaw
+
+# Patreon (future)
+# patreon: openclaw
+
+# Ko-fi (future)
+# ko_fi: openclaw
+
+# Buy Me a Coffee (future)
+# buy_me_a_coffee: openclaw
+
+# Custom funding URL
+custom:
+  - "https://openclaw.ai/sponsor"
+  - "https://paypal.me/openclaw"
+
+# Contact for enterprise sponsorship
+# Email: enterprise@openclaw.ai

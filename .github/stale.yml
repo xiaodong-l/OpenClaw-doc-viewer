@@ -1,0 +1,64 @@
+# Configuration for stale issues and PRs
+# https://github.com/apps/stale
+
+# Number of days of inactivity before an issue becomes stale
+daysUntilStale: 90
+
+# Number of days of inactivity before a stale issue is closed
+daysUntilClose: 14
+
+# Issues with these labels will never be considered stale
+exemptLabels:
+  - pinned
+  - security
+  - bug
+  - enhancement
+  - "help wanted"
+  - "good first issue"
+
+# Label to use when marking an issue as stale
+staleLabel: stale
+
+# Comment to post when marking an issue as stale
+markComment: >
+  This issue has been automatically marked as stale because it has not had
+  recent activity. It will be closed if no further activity occurs. Thank you
+  for your contributions.
+
+  If this issue is still relevant, please leave a comment explaining why.
+
+# Comment to post when closing a stale issue
+closeComment: >
+  This issue has been automatically closed due to inactivity. If you believe
+  this is still a problem, please feel free to reopen it or create a new issue
+  with updated information.
+
+# Limit to only issues or pull requests
+# Uncomment one of the following lines to limit to only issues or only pull requests
+# only: issues
+# only: pulls
+
+# Automatically close pull requests
+pulls:
+  daysUntilStale: 30
+  daysUntilClose: 7
+  markComment: >
+    This pull request has been automatically marked as stale because it has not had
+    recent activity. It will be closed if no further activity occurs. Thank you
+    for your contributions.
+
+    If this PR is still relevant, please leave a comment explaining why.
+
+  closeComment: >
+    This pull request has been automatically closed due to inactivity. If you
+    believe this is still relevant, please feel free to reopen it or create a
+    new PR with updated information.
+
+# Set to true to ignore issues in a project (defaults to false)
+exemptProjects: false
+
+# Set to true to ignore issues in a milestone (defaults to false)
+exemptMilestones: true
+
+# Set to true to ignore issues with an assignee (defaults to false)
+exemptAssignees: true
