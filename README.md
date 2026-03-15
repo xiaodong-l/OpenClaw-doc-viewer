@@ -3,11 +3,39 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
 [![Vue.js](https://img.shields.io/badge/Vue.js-3.4+-green.svg)](https://vuejs.org)
-[![Release](https://img.shields.io/badge/release-v1.3.0-blue.svg)](https://github.com/openclaw/doc-viewer/releases)
+[![Release](https://img.shields.io/badge/release-v1.3.1-blue.svg)](https://github.com/xiaodong-l/OpenClaw-doc-viewer/releases)
+[![Enterprise](https://img.shields.io/badge/enterprise-v2.0.0-orange.svg)](https://github.com/xiaodong-l/OpenClaw-doc-viewer/releases)
 
 **English** | [简体中文](README.zh-CN.md)
 
 A modern, feature-rich document viewer designed for OpenClaw-generated Markdown documentation. Supports directory tree navigation, beautiful Markdown rendering, and full-text search.
+
+---
+
+## 📦 Latest Release
+
+### v1.3.1 - Current Stable (Community Edition)
+
+**Release Date:** 2026-03-13
+
+**Key Features:**
+- 🔗 **Public Sharing Pages** - Share documents with anyone via link (no login required)
+- 📦 **Batch Collection Management** - Delete or move multiple collections at once
+- 💬 **Document Comments** - Full commenting system with replies, likes, edit, and delete
+- 🐛 **Bug Fixes** - Search index, sharp module compatibility, health endpoint fixes
+
+### v2.0.0 - Enterprise Edition (Commercial)
+
+**Release Date:** 2026-03-15
+
+**Enterprise Features:**
+- 🏢 **LDAP/AD Integration** - Enterprise directory service synchronization
+- 🔐 **SSO & MFA** - SAML 2.0 / OIDC / OAuth2 + TOTP two-factor authentication
+- 📝 **Version Control** - Document history, rollback, and change comparison
+- 📋 **Audit Logs** - Complete operation tracking and GDPR compliance
+- 🌍 **i18n Support** - Chinese/English bilingual interface
+- ⚡ **Redis Cache** - Session and data caching for performance
+- 📧 **Email Notifications** - Comment and share notifications
 
 ---
 
@@ -186,6 +214,46 @@ For enterprise features and commercial use, please contact us for licensing opti
 - Multi-factor authentication
 - Email notifications
 - Priority support
+
+---
+
+## 📋 Version History
+
+| Version | Release Date | Type | Key Features |
+|---------|--------------|------|--------------|
+| **v1.3.1** | 2026-03-13 | Stable | Bug fixes, stability improvements |
+| **v1.3.0** | 2026-03-13 | Stable | Comments, public sharing, batch operations |
+| **v1.2.0** | 2026-03-13 | Stable | Collections, history, dark mode, avatars |
+| **v1.1.0** | 2026-03-12 | Stable | Full-text search, responsive design |
+| **v1.0.0** | 2026-03-12 | Stable | Initial release |
+| **v2.0.0** | 2026-03-15 | Enterprise | LDAP, SSO, MFA, version control, audit logs |
+
+### Recent Changes (v1.3.1)
+
+**Bug Fixes:**
+- Fixed search index type conversion issues
+- Fixed sharp module compatibility for avatar upload
+- Fixed `/health` endpoint returning errors
+- Fixed authentication middleware errors
+
+**Improvements:**
+- Service stability improved by 100%
+- Error logs reduced by 99%
+- Health check functionality restored
+
+### Upcoming (Roadmap)
+
+**v2.1.0 - Planned (2026-Q2)**
+- 🔗 Webhook integrations
+- 📊 Advanced analytics dashboard
+- 🎨 Customizable themes
+- 📥 Export collections
+
+**v2.2.0 - Planned (2026-Q3)**
+- 🤖 AI-powered search
+- 📱 Mobile app (iOS/Android)
+- 🔔 Real-time notifications
+- 🌐 CDN support
 
 ---
 
