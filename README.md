@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
 [![Vue.js](https://img.shields.io/badge/Vue.js-3.4+-green.svg)](https://vuejs.org)
-[![Release](https://img.shields.io/badge/release-v1.3.1-blue.svg)](https://github.com/xiaodong-l/OpenClaw-doc-viewer/releases)
+[![Release](https://img.shields.io/badge/release-v1.4.0-blue.svg)](https://github.com/xiaodong-l/OpenClaw-doc-viewer/releases)
 [![Enterprise](https://img.shields.io/badge/enterprise-v2.0.0-orange.svg)](https://github.com/xiaodong-l/OpenClaw-doc-viewer/releases)
 
 **English** | [简体中文](README.zh-CN.md)
@@ -14,15 +14,37 @@ A modern, feature-rich document viewer designed for OpenClaw-generated Markdown 
 
 ## 📦 Latest Release
 
-### v1.3.1 - Current Stable (Community Edition)
+### v1.4.0 - Current Stable (Community Edition)
 
-**Release Date:** 2026-03-13
+**Release Date:** 2026-03-15
 
 **Key Features:**
 - 🔗 **Public Sharing Pages** - Share documents with anyone via link (no login required)
 - 📦 **Batch Collection Management** - Delete or move multiple collections at once
 - 💬 **Document Comments** - Full commenting system with replies, likes, edit, and delete
+- 🤖 **Dependabot Auto-Merge** - Automated dependency updates with smart merge logic
+- 📚 **Comprehensive Documentation** - 41+ documentation files in 4 languages
+- 🧪 **CI/CD Automation** - 5 GitHub Actions workflows
 - 🐛 **Bug Fixes** - Search index, sharp module compatibility, health endpoint fixes
+
+**Dependency Updates (Merged):**
+- ⬆️ Vue Router 4.6.4 → 5.0.3
+- ⬆️ Pinia 2.3.1 → 3.0.4
+- ⬆️ Vite 5.4.21 → 8.0.0
+- ⬆️ @vitejs/plugin-vue 5.2.4 → 6.0.5
+- ⬆️ concurrently 8.2.2 → 9.2.1
+- ⬆️ dotenv 16.6.1 → 17.3.1
+- ⬆️ vitest 1.6.1 → 4.1.0
+- ⬆️ @vitest/coverage-v8 1.6.1 → 4.1.0
+- ⬆️ sinon 18.0.1 → 21.0.2
+- ⬆️ fastify-plugin 4.5.1 → 5.1.0
+- ⬆️ @fastify/cors 9.0.1 → 11.2.0
+- ⬆️ @fastify/multipart 8.3.1 → 9.4.0
+- ⬆️ nodemailer 6.10.1 → 8.0.2
+- ⬆️ actions/checkout v4 → v6
+- ⬆️ actions/labeler v5 → v6
+- ⬆️ actions/upload-artifact v4 → v7
+- ⬆️ Node Docker image 18-alpine → 25-alpine
 
 ### v2.0.0 - Enterprise Edition (Commercial)
 
@@ -239,12 +261,30 @@ For enterprise features and commercial use, please contact us for licensing opti
 
 | Version | Release Date | Type | Key Features |
 |---------|--------------|------|--------------|
+| **v1.4.0** | 2026-03-15 | Stable | Dependency updates, auto-merge, docs |
 | **v1.3.1** | 2026-03-13 | Stable | Bug fixes, stability improvements |
 | **v1.3.0** | 2026-03-13 | Stable | Comments, public sharing, batch operations |
 | **v1.2.0** | 2026-03-13 | Stable | Collections, history, dark mode, avatars |
 | **v1.1.0** | 2026-03-12 | Stable | Full-text search, responsive design |
 | **v1.0.0** | 2026-03-12 | Stable | Initial release |
 | **v2.0.0** | 2026-03-15 | Enterprise | LDAP, SSO, MFA, version control, audit logs |
+
+### Recent Changes (v1.4.0)
+
+**Dependency Updates:**
+- Updated 21+ dependencies (frontend, backend, CI/CD)
+- Enabled Dependabot auto-merge for minor/patch updates
+- Automated branch cleanup
+
+**Documentation:**
+- Added 41+ documentation files
+- Multi-language support (EN/CN/JP/ES)
+- Comprehensive user guides and troubleshooting
+
+**Automation:**
+- 5 GitHub Actions workflows
+- Auto-approve and auto-merge for Dependabot PRs
+- Branch cleanup scripts
 
 ### Recent Changes (v1.3.1)
 

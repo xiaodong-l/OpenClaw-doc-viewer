@@ -255,13 +255,46 @@ March 2026
 ├── Week 1: Feature freeze
 ├── Week 2: Testing
 ├── Week 3: Documentation
-└── Week 4: Release (v1.4.0)
+└── Week 4: Release (v1.4.0) ✅ COMPLETED
 
 April 2026
 ├── Week 1-2: Development
 ├── Week 3: Beta testing
 └── Week 4: Release (v1.5.0)
 ```
+
+---
+
+## 📝 Recent Releases
+
+### v1.4.0 - 2026-03-15
+
+**Type:** Minor Release (Stable)
+
+**Changes:**
+- 21+ dependency updates merged
+- Dependabot auto-merge enabled
+- 41+ documentation files added
+- CI/CD automation improved
+
+**Stats:**
+- Files changed: 157
+- Commits: 32
+- Languages: 4 (EN/CN/JP/ES)
+
+### v1.3.1 - 2026-03-13
+
+**Type:** Patch Release (Stable)
+
+**Changes:**
+- Search index type conversion fix
+- Sharp module compatibility
+- Health endpoint fix
+- Authentication middleware fix
+
+**Stats:**
+- Service stability: +100%
+- Error logs: -99%
 
 ---
 
