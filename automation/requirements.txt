@@ -1,0 +1,7 @@
+# 国内社媒自动化发布脚本依赖
+
+# Playwright - 浏览器自动化
+playwright==1.40.0
+
+# 安装 Playwright 浏览器
+# playwright install
