@@ -272,7 +272,7 @@
   "success": true,
   "data": { ... },
   "meta": {
-    "timestamp": "2026-03-12T01:00:00Z",
+    "timestamp": "2026-03-12",
     "version": "1.0.0"
   }
 }
@@ -322,7 +322,7 @@ GET /api/v1/files?path=/path/to/your/home/.openclaw&depth=1
         "type": "directory",
         "hasChildren": true,
         "mdCount": 15,
-        "updatedAt": "2026-03-12T01:00:00Z"
+        "updatedAt": "2026-03-12"
       },
       {
         "name": "MEMORY.md",
@@ -330,7 +330,7 @@ GET /api/v1/files?path=/path/to/your/home/.openclaw&depth=1
         "type": "file",
         "size": 1024,
         "sizeFormatted": "1KB",
-        "updatedAt": "2026-03-12T01:00:00Z"
+        "updatedAt": "2026-03-12"
       }
     ]
   }
@@ -361,7 +361,7 @@ GET /api/v1/files/path/to/your/home/.openclaw/MEMORY.md
       "sizeFormatted": "1KB",
       "lines": 50,
       "wordCount": 500,
-      "updatedAt": "2026-03-12T01:00:00Z",
+      "updatedAt": "2026-03-12",
       "encoding": "UTF-8"
     }
   }
@@ -402,7 +402,7 @@ GET /api/v1/search?q=skill&limit=20&offset=0
         "excerpt": "创建和管理 OpenClaw <em>技能</em>...",
         "score": 0.95,
         "highlights": ["技能", "技能"],
-        "updatedAt": "2026-03-11T06:00:00Z"
+        "updatedAt": "2026-03-11"
       }
     ]
   }
@@ -422,7 +422,7 @@ GET /api/v1/search?q=skill&limit=20&offset=0
     "totalDirectories": 89,
     "totalSize": 10485760,
     "totalSizeFormatted": "10MB",
-    "lastScan": "2026-03-12T01:00:00Z",
+    "lastScan": "2026-03-12",
     "rootDirs": [
       "/path/to/your/home/.openclaw",
       "/path/to/your/home/.openclaw",
@@ -669,7 +669,7 @@ add_header Content-Security-Policy "default-src 'self'; script-src 'self' 'unsaf
 │            │                                                            │
 ├────────────┴────────────────────────────────────────────────────────────┤
 │  Footer (40px)                                                          │
-│  📊 共 523 个文档 | 💾 10MB | 🕐 最后更新：2026-03-12 01:00              │
+│  📊 共 523 个文档 | 💾 10MB | 🕐 最后更新：2026-03-12                    │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
