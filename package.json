@@ -1,6 +1,6 @@
 {
   "name": "openclaw-doc-viewer",
-  "version": "1.4.2",
+  "version": "1.8.1",
   "description": "A modern, feature-rich document viewer for OpenClaw-generated Markdown documentation",
   "private": true,
   "workspaces": [
