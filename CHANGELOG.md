@@ -17,6 +17,180 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.8.0] - 2026-03-16 - Stable Release
+
+### Added
+
+- 🤖 Merged 11 dependabot dependency updates
+- ⚡ Improved build performance with updated tooling
+
+### Changed
+
+- ⬆️ actions/setup-node: v4 → v6
+- ⬆️ codecov/codecov-action: v3 → v5
+- ⬆️ actions/upload-artifact: v4 → v7
+- ⬆️ actions/checkout: v4 → v6
+- ⬆️ fastify: 4.29.1 → 5.8.2
+- ⬆️ @fastify/jwt: 8.0.1 → 10.0.0
+- ⬆️ @fastify/static: 8.0.0 → 9.0.0
+- ⬆️ redis: 4.7.1 → 5.11.0
+- ⬆️ @faker-js/faker: 8.4.1 → 10.3.0
+- ⬆️ lint-staged: 15.5.2 → 16.4.0
+
+### Security
+
+- 🔒 All security patches applied
+- 🔒 No known vulnerabilities in dependencies
+
+---
+
+## [1.7.0] - 2026-03-15 - Code Cleanup
+
+### Changed
+
+- 🧹 Removed non-project files from repository
+- 🧹 Reorganized workspace directory structure
+- 🧹 Synced documentation with codebase
+- 🧹 Audited and cleaned unused dependencies
+
+### Improved
+
+- 📦 Reduced repository size
+- ⚡ Improved build times
+- 🏗️ Better separation of concerns
+
+---
+
+## [1.6.0] - 2026-03-15 - Browser Automation
+
+### Added
+
+- 🐍 Python browser automation with Playwright
+- 🌐 China social media integration (WeChat, Weibo, Douyin)
+- 📢 Auto-promotion strategy for content publishing
+- 📊 Engagement tracking (likes, shares, comments)
+
+### Changed
+
+- 📝 Added social media automation documentation
+- 🔧 Added browser automation examples
+
+---
+
+## [1.5.0] - 2026-03-14 - Automation
+
+### Added
+
+- 🤖 Dependabot auto-merge for minor/patch updates
+- 👤 Auto-assign action for PRs
+- 🚀 Automated GitHub releases
+
+### Changed
+
+- ⚙️ Configured dependabot.yml for auto-merge
+- 📝 Added automation documentation
+
+---
+
+## [1.4.0] - 2026-03-14 - User Documentation
+
+### Added
+
+- 📚 CONFIGURATION.md - All configuration options
+- 📚 TROUBLESHOOTING.md - Common issues and solutions
+- 📚 FAQ.md - Frequently asked questions
+- 📚 PERFORMANCE.md - Performance optimization guide
+- 📚 MIGRATION.md - Migration from previous versions
+- 📚 MAINTAINERS.md - Maintainer guidelines
+- 📚 ROADMAP.md - Future development plans
+- 📚 TRANSLATION.md - Translation contribution guide
+
+### Changed
+
+- 🌐 All documentation bilingual (EN/CN)
+- 📝 Added code examples in all guides
+- 🖼️ Added screenshots and diagrams
+
+---
+
+## [1.3.0] - 2026-03-13 - Production Ready
+
+### Added
+
+- 🏗️ Production infrastructure and tooling
+- 🔄 CI/CD pipeline with GitHub Actions
+- 🐳 Docker support for container deployment
+- 🧪 Testing framework (Vitest + Playwright)
+- ✨ Code quality tools (ESLint, Prettier, lint-staged)
+
+### Changed
+
+- ⚙️ GitHub Actions: CI, CD, auto-assign, stale, labeler
+- 🐳 Multi-stage Docker builds
+- 🧪 Unit, integration, E2E tests
+- 🔧 Husky hooks, commitlint
+
+---
+
+## [1.2.0] - 2026-03-13 - User Experience
+
+### Added
+
+- 👤 Avatar upload - Custom profile pictures
+- ⭐ Document collections - Bookmark and organize favorites
+- 📜 Reading history - Automatic tracking of viewed documents
+- 🔗 Document sharing - Generate shareable links with expiration
+- 🌙 Dark mode - Complete theme switching
+
+### Changed
+
+- ♻️ Redesigned user settings page
+- ♻️ Enhanced collection management UI
+
+### Fixed
+
+- 🐛 Avatar upload size validation
+- 🐛 History tracking for shared documents
+
+---
+
+## [1.1.0] - 2026-03-12 - Search & Navigation
+
+### Added
+
+- 🔍 Full-text search - FlexSearch integration (1800+ documents)
+- 🌳 Directory tree lazy loading - Load directories on demand
+- 🍞 Breadcrumb navigation - Clear navigation path
+- 📱 Responsive design - Mobile-friendly interface
+- 📖 Reading progress - Table of contents and progress bar
+
+### Changed
+
+- ♻️ Improved search performance
+- ♻️ Enhanced tree navigation UX
+
+### Fixed
+
+- 🐛 Search highlighting in large documents
+- 🐛 Breadcrumb overflow on mobile
+
+---
+
+## [1.0.0] - 2026-03-12 - Initial Release
+
+### Added
+
+- 🎉 Initial release - Community Edition
+- 📁 Directory tree navigation
+- 📝 Markdown rendering with code highlighting
+- 🔐 JWT authentication
+- 👥 Role-based access control (Admin, Editor, Viewer)
+- 🔄 Real-time file updates
+- 🌐 Multi-instance support
+- 📊 Basic statistics
+
+---
+
 ## [1.3.1] - 2026-03-13
 
 ### Fixed
