@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
 [![Vue.js](https://img.shields.io/badge/Vue.js-3.4+-green.svg)](https://vuejs.org)
-[![Release](https://img.shields.io/badge/release-v1.3.0-blue.svg)](https://github.com/openclaw/doc-viewer/releases)
+[![Release](https://img.shields.io/badge/release-v1.0.0-blue.svg)](https://github.com/xiaodong-l/OpenClaw-doc-viewer/releases/tag/v1.0.0)
 
 **English** | [简体中文](README.zh-CN.md)
 
