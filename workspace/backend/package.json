@@ -27,16 +27,16 @@
     "flexsearch": "^0.8.212",
     "jsonwebtoken": "^9.0.3",
     "markdown-it": "^14.1.1",
-    "nodemailer": "^8.0.2",
+    "nodemailer": "^8.0.4",
     "otpauth": "^9.3.4",
     "redis": "^5.11.0",
-    "ws": "^8.18.0"
+    "ws": "^8.20.0"
   },
   "devDependencies": {
-    "@faker-js/faker": "^10.3.0",
-    "@vitest/coverage-v8": "^4.1.0",
+    "@faker-js/faker": "^10.4.0",
+    "@vitest/coverage-v8": "^4.1.2",
     "eslint": "^9.8.0",
-    "sinon": "^21.0.2",
+    "sinon": "^21.0.3",
     "supertest": "^7.0.0",
     "vitest": "^4.1.0"
   },
