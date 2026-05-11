@@ -4,7 +4,7 @@
 # ============================================
 # Stage 1: Build Frontend
 # ============================================
-FROM node:25-alpine AS frontend-builder
+FROM node:26-alpine AS frontend-builder
 
 WORKDIR /app
 
@@ -23,7 +23,7 @@ RUN npm run build
 # ============================================
 # Stage 2: Build Backend
 # ============================================
-FROM node:25-alpine AS backend-builder
+FROM node:26-alpine AS backend-builder
 
 WORKDIR /app
 
@@ -39,7 +39,7 @@ COPY workspace/backend/ ./
 # ============================================
 # Stage 3: Production Image
 # ============================================
-FROM node:25-alpine AS production
+FROM node:26-alpine AS production
 
 # Add labels
 LABEL maintainer="xiaodong-l <3253612047@qq.com>"
@@ -92,7 +92,7 @@ CMD ["node", "workspace/backend/src/server.js"]
 # docker build --target dev -t doc-viewer:dev .
 # ============================================
 
-FROM node:25-alpine AS dev
+FROM node:26-alpine AS dev
 
 WORKDIR /app
 
