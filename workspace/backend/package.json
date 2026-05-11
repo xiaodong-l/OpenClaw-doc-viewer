@@ -36,7 +36,7 @@
     "@faker-js/faker": "^10.3.0",
     "@vitest/coverage-v8": "^4.1.0",
     "eslint": "^9.8.0",
-    "sinon": "^21.0.2",
+    "sinon": "^22.0.0",
     "supertest": "^7.0.0",
     "vitest": "^4.1.0"
   },
