@@ -35,7 +35,7 @@
   "devDependencies": {
     "@faker-js/faker": "^10.3.0",
     "@vitest/coverage-v8": "^4.1.0",
-    "eslint": "^9.8.0",
+    "eslint": "^10.4.1",
     "sinon": "^21.0.2",
     "supertest": "^7.0.0",
     "vitest": "^4.1.0"
