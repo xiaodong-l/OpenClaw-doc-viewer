@@ -55,7 +55,7 @@
   },
   "homepage": "https://github.com/xiaodong-l/OpenClaw-doc-viewer#readme",
   "devDependencies": {
-    "concurrently": "^9.2.1",
+    "concurrently": "^10.0.1",
     "husky": "^9.0.11",
     "lint-staged": "^16.4.0"
   },
